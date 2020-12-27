@@ -1,0 +1,86 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://src/Enemies/LaserEnemy.gd" type="Script" id=1]
+[ext_resource path="res://src/player/materials/Laser.material" type="Material" id=2]
+
+[sub_resource type="SpatialMaterial" id=6]
+flags_transparent = true
+flags_vertex_lighting = true
+vertex_color_use_as_albedo = true
+params_cull_mode = 2
+albedo_color = Color( 0.956863, 0.0431373, 0.0431373, 1 )
+emission_enabled = true
+emission = Color( 1, 0, 0, 1 )
+emission_energy = 2.41
+emission_operator = 0
+emission_on_uv2 = false
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 0.05, 0.05, 1 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 0.115957, 0.109418, 0.586238 )
+
+[sub_resource type="QuadMesh" id=3]
+size = Vector2( 0.05, 0.5 )
+
+[sub_resource type="Curve" id=4]
+_data = [ Vector2( 0, 0.542045 ), 0.0, 2.175, 0, 0, Vector2( 1, 0 ), -3.29216, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=5]
+colors = PoolColorArray( 0, 0, 0, 1, 1, 1, 1, 0 )
+
+[node name="Laser" type="Spatial"]
+script = ExtResource( 1 )
+
+[node name="MeshInstance" type="MeshInstance" parent="."]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
+material_override = SubResource( 6 )
+mesh = SubResource( 1 )
+material/0 = null
+
+[node name="Area" type="Area" parent="MeshInstance"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="LaserAreaShape" type="CollisionShape" parent="MeshInstance/Area"]
+shape = SubResource( 2 )
+
+[node name="BodyLaser" type="StaticBody" parent="MeshInstance"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="ShapeLaser" type="CollisionShape" parent="MeshInstance/BodyLaser"]
+shape = SubResource( 2 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="CPUParticles" type="CPUParticles" parent="."]
+material_override = ExtResource( 2 )
+emitting = false
+amount = 20
+lifetime = 0.5
+one_shot = true
+explosiveness = 0.75
+randomness = 1.0
+mesh = SubResource( 3 )
+flag_align_y = true
+flag_rotate_y = true
+direction = Vector3( 0, 1, 0 )
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 7.0
+initial_velocity_random = 0.47
+linear_accel = 5.0
+damping = 2.0
+scale_amount = 1.2
+scale_amount_curve = SubResource( 4 )
+color_ramp = SubResource( 5 )
+hue_variation = -1.0
+hue_variation_random = 1.0
+[connection signal="area_entered" from="MeshInstance/Area" to="." method="_on_Area_area_entered"]
+[connection signal="body_entered" from="MeshInstance/Area" to="." method="_on_Area_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

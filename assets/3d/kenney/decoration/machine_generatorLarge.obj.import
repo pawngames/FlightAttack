@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/machine_generatorLarge.obj-c82176eab18321636461e7ed287f3527.mesh"
+
+[deps]
+
+files=[ "res://.import/machine_generatorLarge.obj-c82176eab18321636461e7ed287f3527.mesh" ]
+
+source_file="res://assets/3d/kenney/decoration/machine_generatorLarge.obj"
+dest_files=[ "res://.import/machine_generatorLarge.obj-c82176eab18321636461e7ed287f3527.mesh", "res://.import/machine_generatorLarge.obj-c82176eab18321636461e7ed287f3527.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

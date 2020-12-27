@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/platform_smallDiagonal.obj-17c57c0af2dc0e43955588fabd02c2e5.mesh"
+
+[deps]
+
+files=[ "res://.import/platform_smallDiagonal.obj-17c57c0af2dc0e43955588fabd02c2e5.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/platform_smallDiagonal.obj"
+dest_files=[ "res://.import/platform_smallDiagonal.obj-17c57c0af2dc0e43955588fabd02c2e5.mesh", "res://.import/platform_smallDiagonal.obj-17c57c0af2dc0e43955588fabd02c2e5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

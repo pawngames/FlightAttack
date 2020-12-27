@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pipe_rampSmall.obj-62ada78ec12ea2dae38bcb75f35cad46.mesh"
+
+[deps]
+
+files=[ "res://.import/pipe_rampSmall.obj-62ada78ec12ea2dae38bcb75f35cad46.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/pipe_rampSmall.obj"
+dest_files=[ "res://.import/pipe_rampSmall.obj-62ada78ec12ea2dae38bcb75f35cad46.mesh", "res://.import/pipe_rampSmall.obj-62ada78ec12ea2dae38bcb75f35cad46.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

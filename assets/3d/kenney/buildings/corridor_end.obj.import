@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/corridor_end.obj-2e190ddfa619f36ecf61f0db8f16b6ad.mesh"
+
+[deps]
+
+files=[ "res://.import/corridor_end.obj-2e190ddfa619f36ecf61f0db8f16b6ad.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/corridor_end.obj"
+dest_files=[ "res://.import/corridor_end.obj-2e190ddfa619f36ecf61f0db8f16b6ad.mesh", "res://.import/corridor_end.obj-2e190ddfa619f36ecf61f0db8f16b6ad.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

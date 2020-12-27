@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pipe_cross.obj-8a56e7c18cf27806a5a0aeca92d38f3f.mesh"
+
+[deps]
+
+files=[ "res://.import/pipe_cross.obj-8a56e7c18cf27806a5a0aeca92d38f3f.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/pipe_cross.obj"
+dest_files=[ "res://.import/pipe_cross.obj-8a56e7c18cf27806a5a0aeca92d38f3f.mesh", "res://.import/pipe_cross.obj-8a56e7c18cf27806a5a0aeca92d38f3f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

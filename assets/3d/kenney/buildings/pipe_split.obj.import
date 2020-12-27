@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pipe_split.obj-d7db9e3b86b771c48775edf121b75343.mesh"
+
+[deps]
+
+files=[ "res://.import/pipe_split.obj-d7db9e3b86b771c48775edf121b75343.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/pipe_split.obj"
+dest_files=[ "res://.import/pipe_split.obj-d7db9e3b86b771c48775edf121b75343.mesh", "res://.import/pipe_split.obj-d7db9e3b86b771c48775edf121b75343.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

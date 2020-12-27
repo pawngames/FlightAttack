@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pipe_open.obj-1b584b6e4f91d0c0fab6857f581196b3.mesh"
+
+[deps]
+
+files=[ "res://.import/pipe_open.obj-1b584b6e4f91d0c0fab6857f581196b3.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/pipe_open.obj"
+dest_files=[ "res://.import/pipe_open.obj-1b584b6e4f91d0c0fab6857f581196b3.mesh", "res://.import/pipe_open.obj-1b584b6e4f91d0c0fab6857f581196b3.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

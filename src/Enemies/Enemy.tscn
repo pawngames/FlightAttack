@@ -1,0 +1,170 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/3d/kenney/vehicles/craft_cargoB.obj" type="ArrayMesh" id=1]
+[ext_resource path="res://src/Enemies/Enemy.gd" type="Script" id=2]
+
+[sub_resource type="Curve3D" id=1]
+_data = {
+"points": PoolVector3Array( 0, 0, 0, 0, 0, 0, 16.2924, -1.33514e-05, -352.27, 0, 0, 0, 0, 0, 0, 16.2924, 1.90735e-06, -111.826 ),
+"tilts": PoolRealArray( 0, 0 )
+}
+
+[sub_resource type="SpatialMaterial" id=2]
+flags_transparent = true
+flags_unshaded = true
+flags_vertex_lighting = true
+vertex_color_use_as_albedo = true
+params_billboard_mode = 3
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="QuadMesh" id=3]
+
+[sub_resource type="Curve" id=4]
+_data = [ Vector2( 0, 1 ), 0.0, 1.62136, 0, 0, Vector2( 1, 0.614773 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=5]
+offsets = PoolRealArray( 0.463576, 0.754967, 1 )
+colors = PoolColorArray( 1, 1, 0, 1, 1, 0.584314, 0, 0.847059, 1, 0.419608, 0, 0 )
+
+[sub_resource type="GDScript" id=6]
+script/source = "extends StaticBody
+
+onready var health = $\"../../../\".health_max
+onready var explosion = $\"../../CPUParticles\"
+onready var ship_mesh:MeshInstance = $\"../../ShipMesh\"
+onready var tween = $\"../../Tween\"
+
+onready var laser_res = load(\"res://src/Enemies/LaserEnemy.tscn\")
+
+var down = false
+var shoot = false
+
+signal health_out
+
+func _ready():
+	pass
+
+func hit(amount:int):
+	health -= amount
+	if health <= 0 and not down:
+		down = true
+		emit_signal(\"health_out\", null)
+		var duration = explosion.lifetime
+		tween.interpolate_property(
+			ship_mesh, 
+			\"scale\",
+			ship_mesh.scale,
+			Vector3(.1, .1, .1),
+			duration,
+			tween.TRANS_SINE,
+			tween.EASE_IN_OUT,
+			0.0)
+		tween.start()
+		explosion.emitting = true
+		yield(get_tree().create_timer($\"../../CPUParticles\".lifetime), \"timeout\")
+		$\"../../../\".queue_free()
+	pass
+
+func _shoot_side(left:bool):
+	var shot_scene = laser_res.duplicate(true)
+	var shot = shot_scene.instance()
+	shot.set_as_toplevel(true)
+	if left:
+		$Nozzle_L.add_child(shot)
+	else:
+		$Nozzle_R.add_child(shot)
+	pass
+
+func _on_AreaShotRange_area_entered(area):
+	if $Timer.is_stopped():
+		$Timer.start()
+	pass
+
+func _on_Timer_timeout():
+	_shoot_side(true)
+	_shoot_side(false)
+	pass
+
+func _on_AreaShotRange_area_exited(area):
+	if not $Timer.is_stopped():
+		$Timer.stop()
+	pass
+"
+
+[sub_resource type="BoxShape" id=7]
+extents = Vector3( 0.794211, 0.41925, 1.32175 )
+
+[sub_resource type="BoxShape" id=8]
+extents = Vector3( 0.820259, 0.537486, 13.101 )
+
+[node name="Enemy" type="Path"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.38632, 104.064 )
+curve = SubResource( 1 )
+script = ExtResource( 2 )
+health_max = 5
+
+[node name="EPathFollow" type="PathFollow" parent="."]
+transform = Transform( 1, -3.32263e-12, -9.78549e-06, 3.94384e-12, 1, 6.34821e-08, 9.7855e-06, -6.34822e-08, 0.999999, 16.2924, -1.3288e-05, -351.271 )
+offset = 1.0
+rotation_mode = 4
+loop = false
+
+[node name="CPUParticles" type="CPUParticles" parent="EPathFollow"]
+transform = Transform( 3, 4.65661e-10, 5.58794e-09, -6.98492e-10, 3, -1.19804e-07, 0, -5.56611e-10, 3, 0, 0, 0 )
+material_override = SubResource( 2 )
+emitting = false
+amount = 25
+lifetime = 1.5
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+mesh = SubResource( 3 )
+direction = Vector3( 0, 1, 0 )
+spread = 180.0
+gravity = Vector3( 0, 2, 0 )
+initial_velocity = 2.0
+damping = 2.0
+damping_random = 0.4
+scale_amount_curve = SubResource( 4 )
+color_ramp = SubResource( 5 )
+
+[node name="Tween" type="Tween" parent="EPathFollow"]
+
+[node name="ShipMesh" type="MeshInstance" parent="EPathFollow"]
+transform = Transform( 3, 0, 0, 0, 3, 0, 0, 0, 3, 0, 0, 0 )
+mesh = ExtResource( 1 )
+material/0 = null
+material/1 = null
+material/2 = null
+material/3 = null
+
+[node name="EnemySBody" type="StaticBody" parent="EPathFollow/ShipMesh" groups=[
+"Enemy",
+]]
+collision_layer = 3
+script = SubResource( 6 )
+
+[node name="CollisionShape" type="CollisionShape" parent="EPathFollow/ShipMesh/EnemySBody"]
+transform = Transform( 1, 5.82077e-10, 3.72529e-09, -2.32831e-10, 1, -5.1682e-09, -9.31323e-10, -1.24367e-07, 1, 0.000581741, 0.474055, 0.00699997 )
+shape = SubResource( 7 )
+
+[node name="Nozzle_L" type="Position3D" parent="EPathFollow/ShipMesh/EnemySBody"]
+transform = Transform( 1, -2.1684e-18, 9.09495e-13, -1.46909e-17, 1, -2.13163e-14, -9.09495e-13, 1.13687e-13, 1, -0.533301, 0.333332, 3.26135 )
+
+[node name="Nozzle_R" type="Position3D" parent="EPathFollow/ShipMesh/EnemySBody"]
+transform = Transform( 1, -2.00577e-18, 9.09495e-13, -1.38236e-17, 1, -2.13163e-14, -9.09495e-13, 1.06581e-13, 1, 0.466699, 0.333332, 3.26131 )
+
+[node name="Timer" type="Timer" parent="EPathFollow/ShipMesh/EnemySBody"]
+
+[node name="AreaShotRange" type="Area" parent="EPathFollow/ShipMesh"]
+collision_layer = 0
+collision_mask = 4
+
+[node name="CollisionShape" type="CollisionShape" parent="EPathFollow/ShipMesh/AreaShotRange"]
+transform = Transform( 1, -1.51788e-18, 9.09495e-13, -9.48677e-18, 1, -2.13163e-14, -9.09495e-13, 7.10543e-14, 1, 0.000175953, 0.433331, 17.9609 )
+shape = SubResource( 8 )
+[connection signal="timeout" from="EPathFollow/ShipMesh/EnemySBody/Timer" to="EPathFollow/ShipMesh/EnemySBody" method="_on_Timer_timeout"]
+[connection signal="area_entered" from="EPathFollow/ShipMesh/AreaShotRange" to="EPathFollow/ShipMesh/EnemySBody" method="_on_AreaShotRange_area_entered"]
+[connection signal="area_exited" from="EPathFollow/ShipMesh/AreaShotRange" to="EPathFollow/ShipMesh/EnemySBody" method="_on_AreaShotRange_area_exited"]

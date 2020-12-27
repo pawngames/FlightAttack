@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rock_largeB.obj-53223cffc77400e13b5d49861b0f8311.mesh"
+
+[deps]
+
+files=[ "res://.import/rock_largeB.obj-53223cffc77400e13b5d49861b0f8311.mesh" ]
+
+source_file="res://assets/3d/kenney/terrain/rock_largeB.obj"
+dest_files=[ "res://.import/rock_largeB.obj-53223cffc77400e13b5d49861b0f8311.mesh", "res://.import/rock_largeB.obj-53223cffc77400e13b5d49861b0f8311.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

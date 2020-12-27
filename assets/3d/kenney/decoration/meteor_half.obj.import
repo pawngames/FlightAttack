@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/meteor_half.obj-eb670b56d449b652db97072887bcf50f.mesh"
+
+[deps]
+
+files=[ "res://.import/meteor_half.obj-eb670b56d449b652db97072887bcf50f.mesh" ]
+
+source_file="res://assets/3d/kenney/decoration/meteor_half.obj"
+dest_files=[ "res://.import/meteor_half.obj-eb670b56d449b652db97072887bcf50f.mesh", "res://.import/meteor_half.obj-eb670b56d449b652db97072887bcf50f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

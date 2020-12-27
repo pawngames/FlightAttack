@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rail.obj-7f0ba1c140b8413bb6d47568a26d9e62.mesh"
+
+[deps]
+
+files=[ "res://.import/rail.obj-7f0ba1c140b8413bb6d47568a26d9e62.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/rail.obj"
+dest_files=[ "res://.import/rail.obj-7f0ba1c140b8413bb6d47568a26d9e62.mesh", "res://.import/rail.obj-7f0ba1c140b8413bb6d47568a26d9e62.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
