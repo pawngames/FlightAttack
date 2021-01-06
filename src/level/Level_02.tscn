@@ -44,11 +44,11 @@ func _health_out_hits(param):
 	pass
 "
 
-[sub_resource type="ProceduralSky" id=11]
+[sub_resource type="ProceduralSky" id=5]
 
-[sub_resource type="Environment" id=12]
+[sub_resource type="Environment" id=6]
 background_mode = 2
-background_sky = SubResource( 11 )
+background_sky = SubResource( 5 )
 ambient_light_energy = 2.0
 ambient_light_sky_contribution = 0.6
 tonemap_mode = 2
@@ -57,7 +57,7 @@ tonemap_white = 16.0
 ssao_enabled = true
 glow_enabled = true
 
-[sub_resource type="GIProbeData" id=13]
+[sub_resource type="GIProbeData" id=7]
 bounds = AABB( -216.481, -30, -331.621, 432.961, 60, 663.242 )
 cell_size = 5.18158
 to_cell_xform = Transform( 0.192991, 0, 0, 0, 0.192991, 0, 0, 0, 0.192991, 41.7789, 5.78974, 64 )
@@ -95,7 +95,7 @@ curve = SubResource( 2 )
 health_max = 15
 
 [node name="EPathFollow" parent="Elements/Enemies/Enemy" index="0"]
-transform = Transform( -0.0501076, -0.072959, -0.996072, -0.00378213, 0.997335, -0.0728607, 0.998737, 0.000116399, -0.0502498, 47.9419, 6.74333, -38.4302 )
+transform = Transform( -0.0501076, -0.072959, -0.99607, -0.00378213, 0.997335, -0.0728606, 0.998737, 0.000116399, -0.0502497, 47.9419, 6.74333, -38.4302 )
 
 [node name="Squad1" type="Spatial" parent="Elements/Enemies"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5.223, -11.17, 150.55 )
@@ -107,7 +107,7 @@ script = SubResource( 4 )
 health_max = 3
 
 [node name="EPathFollow" parent="Elements/Enemies/Squad1/Enemy3" index="0"]
-transform = Transform( 0.999791, 0, 0.0204504, 0, 1, 0, -0.0204504, 0, 0.999788, 16.9966, 16.453, -501.163 )
+transform = Transform( 0.999791, 0, 0.0204386, 0, 1, 0, -0.0204387, 0, 0.999788, 16.9966, 16.453, -501.163 )
 offset = 0.08
 
 [node name="Enemy4" parent="Elements/Enemies/Squad1" instance=ExtResource( 4 )]
@@ -129,7 +129,7 @@ script = SubResource( 4 )
 health_max = 3
 
 [node name="EPathFollow" parent="Elements/Enemies/Squad1/Enemy6" index="0"]
-transform = Transform( 0.999791, 0, 0.0204367, 0, 1, 0, -0.0204368, 0, 0.999789, 16.9952, 16.453, -501.23 )
+transform = Transform( 0.999791, 0, 0.0204272, 0, 1, 0, -0.0204273, 0, 0.999787, 16.9952, 16.453, -501.23 )
 offset = 0.0
 
 [node name="CSGCombiner" type="CSGCombiner" parent="Elements"]
@@ -166,7 +166,7 @@ depth = 329.105
 material = ExtResource( 2 )
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
-environment = SubResource( 12 )
+environment = SubResource( 6 )
 
 [node name="DirectionalLight" type="DirectionalLight" parent="WorldEnvironment"]
 transform = Transform( 0.530884, 0.350889, 0.771388, -0.845458, 0.281599, 0.453766, -0.0580006, -0.893073, 0.446158, 0, 22.4018, 0 )
@@ -175,7 +175,7 @@ shadow_enabled = true
 [node name="GIProbe" type="GIProbe" parent="WorldEnvironment"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 123.06, 23.3237, -248.408 )
 extents = Vector3( 216.481, 30, 331.621 )
-data = SubResource( 13 )
+data = SubResource( 7 )
 
 [editable path="Elements/Enemies/Enemy"]
 

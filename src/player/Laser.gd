@@ -9,7 +9,7 @@ func _ready():
 
 func _process(delta):
 	if not hit:
-		global_transform.origin += direction
+		global_transform.origin += direction*1.5
 	pass
 
 func _on_Timer_timeout():

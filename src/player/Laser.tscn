@@ -2,7 +2,7 @@
 
 [ext_resource path="res://src/player/Laser.gd" type="Script" id=1]
 
-[sub_resource type="SpatialMaterial" id=6]
+[sub_resource type="SpatialMaterial" id=1]
 flags_transparent = true
 flags_vertex_lighting = true
 vertex_color_use_as_albedo = true
@@ -14,13 +14,13 @@ emission_energy = 2.41
 emission_operator = 0
 emission_on_uv2 = false
 
-[sub_resource type="CubeMesh" id=7]
+[sub_resource type="CubeMesh" id=2]
 size = Vector3( 0.05, 0.05, 1 )
 
-[sub_resource type="BoxShape" id=2]
+[sub_resource type="BoxShape" id=3]
 extents = Vector3( 0.1, 0.1, 0.586238 )
 
-[sub_resource type="SpatialMaterial" id=8]
+[sub_resource type="SpatialMaterial" id=4]
 flags_transparent = true
 flags_vertex_lighting = true
 vertex_color_use_as_albedo = true
@@ -32,28 +32,29 @@ emission_energy = 2.41
 emission_operator = 0
 emission_on_uv2 = false
 
-[sub_resource type="QuadMesh" id=9]
+[sub_resource type="QuadMesh" id=5]
 size = Vector2( 0.05, 0.5 )
 
-[sub_resource type="Curve" id=10]
+[sub_resource type="Curve" id=6]
 _data = [ Vector2( 0, 1 ), 0.0, 1.66656, 0, 0, Vector2( 1, 0 ), -2.84508, 0.0, 0, 0 ]
 
-[sub_resource type="Gradient" id=11]
+[sub_resource type="Gradient" id=7]
 colors = PoolColorArray( 0, 0, 0, 1, 1, 1, 1, 0 )
 
 [node name="Laser" type="Spatial"]
+transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
 script = ExtResource( 1 )
 
 [node name="MeshInstance" type="MeshInstance" parent="."]
 transform = Transform( 2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0 )
-material_override = SubResource( 6 )
-mesh = SubResource( 7 )
+material_override = SubResource( 1 )
+mesh = SubResource( 2 )
 material/0 = null
 
 [node name="Area" type="Area" parent="MeshInstance"]
 
 [node name="CollisionShape" type="CollisionShape" parent="MeshInstance/Area"]
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 5.0
@@ -61,14 +62,14 @@ one_shot = true
 autostart = true
 
 [node name="CPUParticles" type="CPUParticles" parent="."]
-material_override = SubResource( 8 )
+material_override = SubResource( 4 )
 emitting = false
 amount = 20
 lifetime = 0.5
 one_shot = true
 explosiveness = 0.75
 randomness = 1.0
-mesh = SubResource( 9 )
+mesh = SubResource( 5 )
 flag_align_y = true
 flag_rotate_y = true
 direction = Vector3( 0, 1, 0 )
@@ -79,8 +80,8 @@ initial_velocity_random = 0.47
 linear_accel = 5.0
 damping = 2.0
 scale_amount = 2.0
-scale_amount_curve = SubResource( 10 )
-color_ramp = SubResource( 11 )
+scale_amount_curve = SubResource( 6 )
+color_ramp = SubResource( 7 )
 hue_variation = -1.0
 hue_variation_random = 1.0
 [connection signal="body_entered" from="MeshInstance/Area" to="." method="_on_Area_body_entered"]

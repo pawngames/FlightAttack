@@ -50,6 +50,7 @@ func hit(amount:int):
 	health -= amount
 	if health <= 0 and not down:
 		down = true
+		$CollisionShape.disabled = down
 		emit_signal(\"health_out\", null)
 		var duration = explosion.lifetime
 		tween.interpolate_property(

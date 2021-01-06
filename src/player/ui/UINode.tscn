@@ -50,8 +50,8 @@ __meta__ = {
 margin_left = 20.0
 margin_top = 19.0
 margin_right = 205.0
-margin_bottom = 198.0
-custom_constants/separation = 20
+margin_bottom = 254.0
+custom_constants/separation = 25
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -82,14 +82,14 @@ __meta__ = {
 }
 
 [node name="ColorRect" type="ColorRect" parent="Container"]
-margin_top = 49.0
+margin_top = 54.0
 margin_right = 185.0
-margin_bottom = 49.0
+margin_bottom = 54.0
 
 [node name="Shield" type="ProgressBar" parent="Container"]
-margin_top = 69.0
+margin_top = 79.0
 margin_right = 185.0
-margin_bottom = 92.0
+margin_bottom = 114.0
 size_flags_horizontal = 3
 size_flags_vertical = 7
 custom_styles/fg = SubResource( 1 )
@@ -116,9 +116,9 @@ __meta__ = {
 }
 
 [node name="Charge" type="ProgressBar" parent="Container"]
-margin_top = 112.0
+margin_top = 139.0
 margin_right = 185.0
-margin_bottom = 135.0
+margin_bottom = 174.0
 size_flags_horizontal = 3
 size_flags_vertical = 7
 custom_styles/fg = SubResource( 1 )
@@ -144,9 +144,9 @@ __meta__ = {
 }
 
 [node name="Dash" type="ProgressBar" parent="Container"]
-margin_top = 155.0
+margin_top = 199.0
 margin_right = 185.0
-margin_bottom = 179.0
+margin_bottom = 235.0
 size_flags_horizontal = 3
 size_flags_vertical = 7
 custom_styles/fg = SubResource( 3 )

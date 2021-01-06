@@ -41,6 +41,7 @@ _data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 1, 9.77273 ), -45.1948, 0.0,
 _data = [ Vector2( 0, 0.811364 ), 0.0, 3.16364, 0, 0, Vector2( 1, 0 ), 0.490909, 0.0, 0, 0 ]
 
 [node name="Spatial" type="RigidBody"]
+transform = Transform( -1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0 )
 collision_layer = 0
 collision_mask = 0
 mass = 50.0
@@ -89,4 +90,8 @@ collision_mask = 3
 
 [node name="CollisionShape2" type="CollisionShape" parent="Area"]
 shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 3.0
 [connection signal="body_entered" from="Area" to="." method="_on_Area_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -84,12 +84,20 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_accept"):
 		ship_body.shoot()
 	
-	if Input.is_action_just_released("ui_accept") and target.size() > 0:
-		for target_u in target:
-			ship_body.shoot_missile(target_u)
-		for lt in $Targets.get_children():
-			lt.queue_free()
-		target = []
+	if Input.is_action_just_released("ui_accept") and charged == CHARGE_MAX:
+		if target.size() > 0:
+			for target_u in target:
+				ship_body.shoot_missile(target_u)
+			for lt in $Targets.get_children():
+				lt.queue_free()
+			target = []
+		else:
+			ship_body.shoot_missile(null)
+		print("123")
+		var mat:SpatialMaterial = $ShipRef/ShipBody/Aim_far.material_override
+		mat.albedo_texture = load("res://assets/3d/textures/crosshair.png")
+		$ShipRef/ShipBody/Aim_far.material_override = mat
+	
 	
 	if Input.is_action_pressed("ui_accept"):
 		charged += 1
@@ -97,6 +105,11 @@ func _process(delta):
 	else:
 		target = []
 		charged = 0
+	
+	if charged == CHARGE_MAX:
+		var mat:SpatialMaterial = $ShipRef/ShipBody/Aim_far.material_override
+		mat.albedo_texture = load("res://assets/3d/textures/crosshair_lock.png")
+		$ShipRef/ShipBody/Aim_far.material_override = mat
 	
 	charged_ui.value = charged
 	
@@ -127,6 +140,15 @@ func _process(delta):
 		ship.transform.origin.y, 
 		guide.transform.origin.y,
 		follow_speed)
+	
+	transform.origin.x = lerp(
+		transform.origin.x, 
+		-guide.transform.origin.x,
+		follow_speed*2)
+	transform.origin.y = lerp(
+		transform.origin.y, 
+		guide.transform.origin.y,
+		follow_speed*2)
 		
 	ship.transform.origin.y = clamp(ship.transform.origin.y, -v_limit/1.5, v_limit/1.5)
 	ship.transform.origin.x = clamp(ship.transform.origin.x, -h_limit/1.5, h_limit/1.5)
