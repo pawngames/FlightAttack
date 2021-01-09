@@ -129,7 +129,7 @@ script = SubResource( 4 )
 health_max = 3
 
 [node name="EPathFollow" parent="Elements/Enemies/Squad1/Enemy6" index="0"]
-transform = Transform( 0.999791, 0, 0.0204272, 0, 1, 0, -0.0204273, 0, 0.999787, 16.9952, 16.453, -501.23 )
+transform = Transform( 0.999791, 0, 0.0204273, 0, 1, 0, -0.0204273, 0, 0.999787, 16.9952, 16.453, -501.23 )
 offset = 0.0
 
 [node name="CSGCombiner" type="CSGCombiner" parent="Elements"]

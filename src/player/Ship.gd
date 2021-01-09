@@ -143,11 +143,11 @@ func _process(delta):
 	
 	transform.origin.x = lerp(
 		transform.origin.x, 
-		-guide.transform.origin.x,
+		-guide.transform.origin.x*2,
 		follow_speed*2)
 	transform.origin.y = lerp(
 		transform.origin.y, 
-		guide.transform.origin.y,
+		guide.transform.origin.y*2,
 		follow_speed*2)
 		
 	ship.transform.origin.y = clamp(ship.transform.origin.y, -v_limit/1.5, v_limit/1.5)

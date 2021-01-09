@@ -8,13 +8,12 @@ func _ready():
 	pass
 
 func _integrate_forces(state):
-	var multi = 10.0
+	var multi = 5.0
 	if target != null:
 		look_at(target.global_transform.origin, Vector3.UP)
 		var distance = global_transform.origin.distance_to(target.global_transform.origin)
-		multi = 2*distance
-	else:
-		multi += 15
+		multi = 20 + distance/4
+	
 	if not $Explosion.emitting:
 		var direction = -transform.basis.z
 		state.apply_central_impulse(direction*multi)
