@@ -25,6 +25,7 @@ var shield:int = SHIELD_MAX
 
 var first_pressed:Array = [false, false]
 var first_press_ts:Array  = [0,0]
+var b_roll_enabled:bool = true
 
 var target:Array = []
 
@@ -194,17 +195,20 @@ func _check_double_press(side:int):
 				if side == 0:
 					rotation_to.z = rotation_now.z + 8*PI
 				
-				$Tween.interpolate_property(
-					ship_body,
-					"rotation",
-					rotation_now,
-					rotation_to,
-					.8,
-					$Tween.TRANS_SINE,
-					$Tween.EASE_IN_OUT,
-					0.0
-				)
-				$Tween.start()
+				if b_roll_enabled:
+					b_roll_enabled = false
+					$Tween.interpolate_property(
+						ship_body,
+						"rotation",
+						rotation_now,
+						rotation_to,
+						.8,
+						$Tween.TRANS_SINE,
+						$Tween.EASE_IN_OUT,
+						0.0
+					)
+					$Tween.start()
+					$Tween.connect("tween_all_completed", self, "roll_enabled")
 			else:
 				print("clear_state")
 				first_pressed[side] = false
@@ -215,6 +219,10 @@ func _check_double_press(side:int):
 		if abs(dif) > 1000:
 			first_pressed[side] = false
 			first_press_ts[side] = 0
+
+func roll_enabled():
+	b_roll_enabled = true
+	pass
 
 func _on_AreaAim_body_entered(body):
 	if Input.is_action_pressed("ui_accept") and charged == CHARGE_MAX:
