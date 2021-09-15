@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/craft_speederD.obj-ed914cdc0983e6da99fbbc0d3f93d2e4.mesh"
+
+[deps]
+
+files=[ "res://.import/craft_speederD.obj-ed914cdc0983e6da99fbbc0d3f93d2e4.mesh" ]
+
+source_file="res://assets/3d/kenney/vehicles/craft_speederD.obj"
+dest_files=[ "res://.import/craft_speederD.obj-ed914cdc0983e6da99fbbc0d3f93d2e4.mesh", "res://.import/craft_speederD.obj-ed914cdc0983e6da99fbbc0d3f93d2e4.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

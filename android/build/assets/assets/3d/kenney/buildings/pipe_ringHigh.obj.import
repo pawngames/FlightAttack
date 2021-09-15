@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pipe_ringHigh.obj-9f4d39278942f1f1af1ef091e9b7eacb.mesh"
+
+[deps]
+
+files=[ "res://.import/pipe_ringHigh.obj-9f4d39278942f1f1af1ef091e9b7eacb.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/pipe_ringHigh.obj"
+dest_files=[ "res://.import/pipe_ringHigh.obj-9f4d39278942f1f1af1ef091e9b7eacb.mesh", "res://.import/pipe_ringHigh.obj-9f4d39278942f1f1af1ef091e9b7eacb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

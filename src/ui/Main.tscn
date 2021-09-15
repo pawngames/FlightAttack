@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://src/ui/Main.gd" type="Script" id=1]
+[ext_resource path="res://src/ui/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/ui/TopLayer.tscn" type="PackedScene" id=3]
+
+[node name="Main" type="Control"]
+pause_mode = 2
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TopLayer" type="Control" parent="."]
+pause_mode = 2
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CanvasLayer" parent="TopLayer" instance=ExtResource( 3 )]
+
+[node name="Player" parent="TopLayer" instance=ExtResource( 2 )]
+anchor_left = 6.48
+anchor_top = -0.358
+anchor_right = 19.53
+anchor_bottom = 2.142
+margin_left = -0.00500488
+margin_top = 0.00330067
+margin_right = -0.00500488
+margin_bottom = 0.0032959
+
+[node name="Scenes" type="Control" parent="."]
+pause_mode = 2
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}

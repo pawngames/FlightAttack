@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Zodik - Lord of Zorg I.ogg-361cc98f420ef99555f46374bacd1b57.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/Zodik - Lord of Zorg I.ogg"
+dest_files=[ "res://.import/Zodik - Lord of Zorg I.ogg-361cc98f420ef99555f46374bacd1b57.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/terrain_sideEnd.obj-b0f90ffd9a0b8f9ee75cbf509fad4e21.mesh"
+
+[deps]
+
+files=[ "res://.import/terrain_sideEnd.obj-b0f90ffd9a0b8f9ee75cbf509fad4e21.mesh" ]
+
+source_file="res://assets/3d/kenney/terrain/terrain_sideEnd.obj"
+dest_files=[ "res://.import/terrain_sideEnd.obj-b0f90ffd9a0b8f9ee75cbf509fad4e21.mesh", "res://.import/terrain_sideEnd.obj-b0f90ffd9a0b8f9ee75cbf509fad4e21.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

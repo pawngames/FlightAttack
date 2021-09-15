@@ -1,0 +1,112 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://src/ui/ButtonMenu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://src/ui/PauseMenu.gd" type="Script" id=2]
+
+[sub_resource type="StyleBoxFlat" id=1]
+bg_color = Color( 0, 0, 0, 1 )
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color( 0.0980392, 1, 0, 1 )
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+shadow_offset = Vector2( 0, 10 )
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://assets/fonts/Atarian/SF Atarian System Extended Italic.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 40
+outline_size = 4
+use_mipmaps = true
+use_filter = true
+font_data = SubResource( 2 )
+
+[sub_resource type="GDScript" id=4]
+script/source = "extends Button
+
+export(bool) var start_focused = false
+
+func _ready():
+	if start_focused:
+		grab_focus()
+	pass
+
+func _on_ButtonStart_mouse_entered():
+	grab_focus()
+	pass
+"
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://assets/fonts/Atarian/SF Atarian System Extended Italic.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+size = 40
+outline_size = 4
+use_mipmaps = true
+use_filter = true
+font_data = SubResource( 5 )
+
+[sub_resource type="GDScript" id=7]
+script/source = "extends Button
+
+export(bool) var start_focused = false
+
+func _ready():
+	if start_focused:
+		grab_focus()
+	pass
+
+func _on_ButtonStart_mouse_entered():
+	grab_focus()
+	pass
+"
+
+[node name="PauseMenu" type="CenterContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="Panel" parent="."]
+margin_left = 387.0
+margin_top = 175.0
+margin_right = 637.0
+margin_bottom = 425.0
+rect_min_size = Vector2( 250, 250 )
+custom_styles/panel = SubResource( 1 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+margin_left = 429.0
+margin_top = 251.0
+margin_right = 595.0
+margin_bottom = 349.0
+
+[node name="RestarBtn" parent="VBoxContainer" instance=ExtResource( 1 )]
+margin_right = 166.0
+focus_neighbour_top = NodePath("../ExitBtn")
+focus_neighbour_bottom = NodePath("../ExitBtn")
+custom_fonts/font = SubResource( 3 )
+text = "Restart"
+script = SubResource( 4 )
+
+[node name="ExitBtn" parent="VBoxContainer" instance=ExtResource( 1 )]
+margin_left = 39.0
+margin_top = 51.0
+margin_right = 127.0
+margin_bottom = 98.0
+focus_neighbour_top = NodePath("../RestarBtn")
+focus_neighbour_bottom = NodePath("../RestarBtn")
+custom_fonts/font = SubResource( 6 )
+text = "Exit"
+script = SubResource( 7 )
+start_focused = false
+
+[connection signal="pressed" from="VBoxContainer/RestarBtn" to="." method="_on_RestarBtn_pressed"]
+[connection signal="pressed" from="VBoxContainer/ExitBtn" to="." method="_on_ExitBtn_pressed"]

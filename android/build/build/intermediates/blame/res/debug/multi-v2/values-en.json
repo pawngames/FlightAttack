@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en/values-en.xml",
+            "map": [
+                {
+                    "source": "/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/res/values-en/godot_project_name_string.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "1",
+                        "startOffsets": "112",
+                        "endColumns": "67",
+                        "endOffsets": "178"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "70",
+                        "endOffsets": "121"
+                    }
+                }
+            ]
+        }
+    ]
+}

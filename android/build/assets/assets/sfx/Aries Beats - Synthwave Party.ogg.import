@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Aries Beats - Synthwave Party.ogg-c09d58f8b670481baa8b89468e32b80f.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/Aries Beats - Synthwave Party.ogg"
+dest_files=[ "res://.import/Aries Beats - Synthwave Party.ogg-c09d58f8b670481baa8b89468e32b80f.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

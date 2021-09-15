@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/machine_wirelessCable.obj-44e51967e999fb8ed0898786c1e5815d.mesh"
+
+[deps]
+
+files=[ "res://.import/machine_wirelessCable.obj-44e51967e999fb8ed0898786c1e5815d.mesh" ]
+
+source_file="res://assets/3d/kenney/decoration/machine_wirelessCable.obj"
+dest_files=[ "res://.import/machine_wirelessCable.obj-44e51967e999fb8ed0898786c1e5815d.mesh", "res://.import/machine_wirelessCable.obj-44e51967e999fb8ed0898786c1e5815d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

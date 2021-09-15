@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/turret_canon_wire.obj-8e9fe85bc5ce0d0b40a846aba0715206.mesh"
+
+[deps]
+
+files=[ "res://.import/turret_canon_wire.obj-8e9fe85bc5ce0d0b40a846aba0715206.mesh" ]
+
+source_file="res://assets/3d/models/turret_canon_wire.obj"
+dest_files=[ "res://.import/turret_canon_wire.obj-8e9fe85bc5ce0d0b40a846aba0715206.mesh", "res://.import/turret_canon_wire.obj-8e9fe85bc5ce0d0b40a846aba0715206.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

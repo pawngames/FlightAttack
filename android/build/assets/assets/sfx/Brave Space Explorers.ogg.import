@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Brave Space Explorers.ogg-0c2702ac002c8156f691c4ed930f5555.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/Brave Space Explorers.ogg"
+dest_files=[ "res://.import/Brave Space Explorers.ogg-0c2702ac002c8156f691c4ed930f5555.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

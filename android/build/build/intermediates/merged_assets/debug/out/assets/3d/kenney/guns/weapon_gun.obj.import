@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/weapon_gun.obj-8d3723a87eb1d03cd1337f4881ad6254.mesh"
+
+[deps]
+
+files=[ "res://.import/weapon_gun.obj-8d3723a87eb1d03cd1337f4881ad6254.mesh" ]
+
+source_file="res://assets/3d/kenney/guns/weapon_gun.obj"
+dest_files=[ "res://.import/weapon_gun.obj-8d3723a87eb1d03cd1337f4881ad6254.mesh", "res://.import/weapon_gun.obj-8d3723a87eb1d03cd1337f4881ad6254.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

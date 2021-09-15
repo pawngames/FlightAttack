@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rocket_baseA.obj-031b41633febcb0ad53c85793831e8a0.mesh"
+
+[deps]
+
+files=[ "res://.import/rocket_baseA.obj-031b41633febcb0ad53c85793831e8a0.mesh" ]
+
+source_file="res://assets/3d/kenney/vehicles/rocket_baseA.obj"
+dest_files=[ "res://.import/rocket_baseA.obj-031b41633febcb0ad53c85793831e8a0.mesh", "res://.import/rocket_baseA.obj-031b41633febcb0ad53c85793831e8a0.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

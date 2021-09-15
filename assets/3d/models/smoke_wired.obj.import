@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/smoke_wired.obj-03ae166fa0711ead481db2b45ad8f09c.mesh"
+
+[deps]
+
+files=[ "res://.import/smoke_wired.obj-03ae166fa0711ead481db2b45ad8f09c.mesh" ]
+
+source_file="res://assets/3d/models/smoke_wired.obj"
+dest_files=[ "res://.import/smoke_wired.obj-03ae166fa0711ead481db2b45ad8f09c.mesh", "res://.import/smoke_wired.obj-03ae166fa0711ead481db2b45ad8f09c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

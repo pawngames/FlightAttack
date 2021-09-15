@@ -1,0 +1,128 @@
+[gd_scene load_steps=13 format=2]
+
+[ext_resource path="res://assets/2d/level/square_purple.png" type="Texture" id=1]
+[ext_resource path="res://src/ui/Bg.gd" type="Script" id=2]
+[ext_resource path="res://assets/2d/ui/logo.png" type="Texture" id=3]
+[ext_resource path="res://itch.io/logo_pawn.png" type="Texture" id=4]
+[ext_resource path="res://itch.io/godot_logo.png" type="Texture" id=5]
+[ext_resource path="res://assets/3d/skybox/horizon.png" type="Texture" id=6]
+[ext_resource path="res://src/ui/StartMenu.gd" type="Script" id=7]
+[ext_resource path="res://src/ui/ButtonMenu.tscn" type="PackedScene" id=8]
+
+[sub_resource type="PanoramaSky" id=1]
+panorama = ExtResource( 6 )
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+background_sky_orientation = Basis( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1 )
+
+[sub_resource type="SpatialMaterial" id=3]
+flags_world_triplanar = true
+albedo_texture = ExtResource( 1 )
+metallic_specular = 0.0
+emission_enabled = true
+emission = Color( 1, 1, 1, 1 )
+emission_energy = 2.41
+emission_operator = 1
+emission_on_uv2 = false
+emission_texture = ExtResource( 1 )
+uv1_scale = Vector3( 30, 60, 3.345 )
+
+[sub_resource type="CubeMesh" id=4]
+size = Vector3( 15, 10, 50 )
+
+[node name="Root" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 1024, 600 )
+script = ExtResource( 7 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+margin_left = 223.0
+margin_top = 206.0
+margin_right = 800.0
+margin_bottom = 394.0
+
+[node name="TextureRect" type="TextureRect" parent="CenterContainer/VBoxContainer"]
+margin_right = 577.0
+margin_bottom = 137.0
+texture = ExtResource( 3 )
+
+[node name="Button" parent="CenterContainer/VBoxContainer" instance=ExtResource( 8 )]
+margin_left = 228.0
+margin_top = 141.0
+margin_right = 349.0
+margin_bottom = 188.0
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 475.0
+grow_horizontal = 2
+grow_vertical = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+margin_right = 1024.0
+margin_bottom = 125.0
+custom_constants/separation = 80
+alignment = 1
+
+[node name="BtnPawn" type="TextureButton" parent="MarginContainer/HBoxContainer"]
+margin_left = 228.0
+margin_right = 303.0
+margin_bottom = 125.0
+texture_normal = ExtResource( 4 )
+stretch_mode = 3
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer"]
+margin_left = 383.0
+margin_right = 640.0
+margin_bottom = 125.0
+size_flags_vertical = 7
+text = "made using the awesome Godot Engine "
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="BtnGodot" type="TextureButton" parent="MarginContainer/HBoxContainer"]
+margin_left = 720.0
+margin_right = 795.0
+margin_bottom = 125.0
+texture_normal = ExtResource( 5 )
+stretch_mode = 3
+
+[node name="Background" type="Spatial" parent="."]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="Background"]
+environment = SubResource( 2 )
+
+[node name="Camera" type="Camera" parent="Background"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 12 )
+current = true
+fov = 100.0
+near = 0.01
+
+[node name="Bg" type="MeshInstance" parent="Background"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, -13 )
+material_override = SubResource( 3 )
+mesh = SubResource( 4 )
+material/0 = null
+script = ExtResource( 2 )
+
+[connection signal="pressed" from="CenterContainer/VBoxContainer/Button" to="." method="_on_Button_pressed"]

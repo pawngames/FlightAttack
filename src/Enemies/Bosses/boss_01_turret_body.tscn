@@ -1,0 +1,59 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://assets/3d/models/bosses/boss_01/boss_01_turret_canon.tres" type="ArrayMesh" id=2]
+[ext_resource path="res://assets/3d/models/bosses/boss_01/boss_01_turret_body.tres" type="ArrayMesh" id=3]
+[ext_resource path="res://src/Enemies/Bosses/TurretCol.gd" type="Script" id=4]
+[ext_resource path="res://src/particles/Smoke.tscn" type="PackedScene" id=5]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 5.5, 1.7073, 2.44264 )
+
+[sub_resource type="Curve" id=2]
+_data = [ Vector2( 0, 1 ), 0.0, 1.62136, 0, 0, Vector2( 1, 0 ), -2.87727, 0.0, 0, 0 ]
+
+[sub_resource type="Gradient" id=3]
+offsets = PoolRealArray( 0.463576, 0.754967, 1 )
+colors = PoolColorArray( 1, 1, 0, 1, 1, 0.584314, 0, 0.847059, 1, 0.419608, 0, 0 )
+
+[node name="boss_01_turret_body" type="MeshInstance"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.65486e-07, 8.06508, 1.19535 )
+mesh = ExtResource( 3 )
+material/0 = null
+material/1 = null
+
+[node name="TurretCol" type="StaticBody" parent="."]
+collision_layer = 0
+script = ExtResource( 4 )
+tween_path = NodePath("../Tween")
+
+[node name="CollisionShape" type="CollisionShape" parent="TurretCol"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6, 0 )
+shape = SubResource( 1 )
+
+[node name="Smoke" parent="." instance=ExtResource( 5 )]
+transform = Transform( 3, 4.65661e-10, 5.58794e-09, -6.98492e-10, 3, -1.19804e-07, 0, -5.56611e-10, 3, 0, 2.57832, 0 )
+scale_amount_curve = SubResource( 2 )
+color_ramp = SubResource( 3 )
+
+[node name="RotHelper" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 1.336, 0 )
+
+[node name="boss_01_turret_canon" type="MeshInstance" parent="RotHelper"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3, 0, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+
+[node name="Nozzle" type="Position3D" parent="RotHelper/boss_01_turret_canon"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9 )
+
+[node name="boss_01_turret_canon2" type="MeshInstance" parent="RotHelper"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.3, 0, 0 )
+mesh = ExtResource( 2 )
+material/0 = null
+material/1 = null
+
+[node name="Nozzle" type="Position3D" parent="RotHelper/boss_01_turret_canon2"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.33786e-06, 0, 9 )
+
+[node name="Tween" type="Tween" parent="."]

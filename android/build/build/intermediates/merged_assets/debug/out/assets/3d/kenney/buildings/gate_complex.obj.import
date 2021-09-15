@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/gate_complex.obj-30b4d7a28e89a298f7598666cbe82abb.mesh"
+
+[deps]
+
+files=[ "res://.import/gate_complex.obj-30b4d7a28e89a298f7598666cbe82abb.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/gate_complex.obj"
+dest_files=[ "res://.import/gate_complex.obj-30b4d7a28e89a298f7598666cbe82abb.mesh", "res://.import/gate_complex.obj-30b4d7a28e89a298f7598666cbe82abb.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

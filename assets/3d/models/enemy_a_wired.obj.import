@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/enemy_a_wired.obj-fa2b87e45d43463d498364ade1852547.mesh"
+
+[deps]
+
+files=[ "res://.import/enemy_a_wired.obj-fa2b87e45d43463d498364ade1852547.mesh" ]
+
+source_file="res://assets/3d/models/enemy_a_wired.obj"
+dest_files=[ "res://.import/enemy_a_wired.obj-fa2b87e45d43463d498364ade1852547.mesh", "res://.import/enemy_a_wired.obj-fa2b87e45d43463d498364ade1852547.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

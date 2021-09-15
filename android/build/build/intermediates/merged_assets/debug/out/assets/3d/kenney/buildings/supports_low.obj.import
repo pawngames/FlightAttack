@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/supports_low.obj-fe00e34486ec7ae836c4689d6103358a.mesh"
+
+[deps]
+
+files=[ "res://.import/supports_low.obj-fe00e34486ec7ae836c4689d6103358a.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/supports_low.obj"
+dest_files=[ "res://.import/supports_low.obj-fe00e34486ec7ae836c4689d6103358a.mesh", "res://.import/supports_low.obj-fe00e34486ec7ae836c4689d6103358a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/desk_chairStool.obj-80b50758bf3705a0f09b638525b0aab2.mesh"
+
+[deps]
+
+files=[ "res://.import/desk_chairStool.obj-80b50758bf3705a0f09b638525b0aab2.mesh" ]
+
+source_file="res://assets/3d/kenney/decoration/desk_chairStool.obj"
+dest_files=[ "res://.import/desk_chairStool.obj-80b50758bf3705a0f09b638525b0aab2.mesh", "res://.import/desk_chairStool.obj-80b50758bf3705a0f09b638525b0aab2.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

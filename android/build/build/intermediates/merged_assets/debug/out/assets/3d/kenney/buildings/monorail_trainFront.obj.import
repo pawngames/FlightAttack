@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/monorail_trainFront.obj-d49448998ac598f7e9b26fc8d2a17a89.mesh"
+
+[deps]
+
+files=[ "res://.import/monorail_trainFront.obj-d49448998ac598f7e9b26fc8d2a17a89.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/monorail_trainFront.obj"
+dest_files=[ "res://.import/monorail_trainFront.obj-d49448998ac598f7e9b26fc8d2a17a89.mesh", "res://.import/monorail_trainFront.obj-d49448998ac598f7e9b26fc8d2a17a89.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

@@ -8,21 +8,109 @@
 
 config_version=4
 
-_global_script_classes=[  ]
+_global_script_classes=[ {
+"base": "Leaf",
+"class": "ActionLeaf",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/leaves/action.gd"
+}, {
+"base": "Decorator",
+"class": "AlwaysFailDecorator",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/decorators/failer.gd"
+}, {
+"base": "Decorator",
+"class": "AlwaysSucceedDecorator",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/decorators/succeeder.gd"
+}, {
+"base": "Node",
+"class": "BehaviorTree",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/behavior_tree.gd"
+}, {
+"base": "BehaviorTree",
+"class": "BehaviorTreeNode",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/bt_node.gd"
+}, {
+"base": "BehaviorTree",
+"class": "BehaviorTreeRoot",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/bt_root.gd"
+}, {
+"base": "BehaviorTreeNode",
+"class": "Composite",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/composites/composite.gd"
+}, {
+"base": "Leaf",
+"class": "ConditionLeaf",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/leaves/condition.gd"
+}, {
+"base": "BehaviorTreeNode",
+"class": "Decorator",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/decorators/decorator.gd"
+}, {
+"base": "Decorator",
+"class": "InverterDecorator",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/decorators/inverter.gd"
+}, {
+"base": "BehaviorTreeNode",
+"class": "Leaf",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/leaves/leaf.gd"
+}, {
+"base": "Decorator",
+"class": "LimiterDecorator",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/decorators/limiter.gd"
+}, {
+"base": "Composite",
+"class": "SelectorComposite",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/composites/selector.gd"
+}, {
+"base": "Composite",
+"class": "SequenceComposite",
+"language": "GDScript",
+"path": "res://addons/behavior_tree/nodes/composites/sequence.gd"
+} ]
 _global_script_class_icons={
-
+"ActionLeaf": "res://addons/behavior_tree/icons/action.svg",
+"AlwaysFailDecorator": "res://addons/behavior_tree/icons/fail.svg",
+"AlwaysSucceedDecorator": "res://addons/behavior_tree/icons/succeed.svg",
+"BehaviorTree": "",
+"BehaviorTreeNode": "res://addons/behavior_tree/icons/action.svg",
+"BehaviorTreeRoot": "res://addons/behavior_tree/icons/tree.svg",
+"Composite": "res://addons/behavior_tree/icons/category_composite.svg",
+"ConditionLeaf": "res://addons/behavior_tree/icons/condition.svg",
+"Decorator": "res://addons/behavior_tree/icons/category_decorator.svg",
+"InverterDecorator": "res://addons/behavior_tree/icons/inverter.svg",
+"Leaf": "res://addons/behavior_tree/icons/action.svg",
+"LimiterDecorator": "res://addons/behavior_tree/icons/limiter.svg",
+"SelectorComposite": "res://addons/behavior_tree/icons/selector.svg",
+"SequenceComposite": "res://addons/behavior_tree/icons/sequencer.svg"
 }
 
 [application]
 
-config/name="FlightAttack"
-run/main_scene="res://src/level/Level_00.tscn"
+config/name="RetroWave Burner"
+run/main_scene="res://src/ui/Main.tscn"
+boot_splash/image="res://assets/2d/splash.png"
 config/icon="res://icon.png"
 
 [display]
 
 window/stretch/mode="viewport"
 window/stretch/aspect="keep"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/behavior_tree/plugin.cfg" )
 
 [input]
 
@@ -44,7 +132,28 @@ ui_dash={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":2,"pressure":0.0,"pressed":false,"script":null)
  ]
 }
+ui_jump={
+"deadzone": 0.5,
+"events": [ Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":3,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+ui_pause={
+"deadzone": 0.5,
+"events": [ Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":11,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[physics]
+
+common/physics_fps=180
+3d/smooth_trimesh_collision=true
 
 [rendering]
 
+threads/thread_model=2
+quality/filters/msaa=1
 environment/default_environment="res://default_env.tres"

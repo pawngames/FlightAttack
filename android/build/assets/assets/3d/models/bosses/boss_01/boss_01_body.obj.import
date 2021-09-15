@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/boss_01_body.obj-f7893760e639d592b84904b6e59c5664.mesh"
+
+[deps]
+
+files=[ "res://.import/boss_01_body.obj-f7893760e639d592b84904b6e59c5664.mesh" ]
+
+source_file="res://assets/3d/models/bosses/boss_01/boss_01_body.obj"
+dest_files=[ "res://.import/boss_01_body.obj-f7893760e639d592b84904b6e59c5664.mesh", "res://.import/boss_01_body.obj-f7893760e639d592b84904b6e59c5664.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

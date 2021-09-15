@@ -42,8 +42,8 @@ func _process(delta):
 	begin(Mesh.PRIMITIVE_TRIANGLE_STRIP)
 	var uvOffset = 0
 	for i in range(points.size()):
-		var t = float(i + 1) / points.size()
-		var currColor = startColor.linear_interpolate(endColor, 1 - t)
+		var t = float(i + 1) / points.size() 
+		var currColor = startColor.linear_interpolate(endColor, 1.2 - t)
 		set_color(currColor)
 		
 		if scaleTexture:

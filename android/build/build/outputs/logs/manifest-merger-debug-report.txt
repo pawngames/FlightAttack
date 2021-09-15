@@ -1,0 +1,257 @@
+-- Merging decision tree log ---
+meta-data#org.godotengine.editor.version
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:34:9-36:53
+	android:value
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml
+manifest
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:2:1-71:12
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:2:1-71:12
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:2:1-71:12
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:2:1-71:12
+MERGED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:2:1-71:12
+MERGED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:2:1-27:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5b5c96b58f7e900ed17e011bb7ea215f/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ef8a8ee959fb4c3cb45896488d0f6629/fragment-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/171357cc7dc8c7c45b23ac0c50de1342/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/49fe4f73117fbb6195871cb5d1ff1533/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/70e72f97faa3655a718a198998797060/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5ffb2a6ed7454eb2493ea3dd0e618bbe/media-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/c640c1f9b0190034d84961299d1f0136/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ce823e5504a6ae565da5ace5e16331a9/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/800e8eed58fcf7f7dac7e44407ab1d8b/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5cb6e6b367c22ef8e7583794d528b30d/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/90cbb7e6c24ae86ef5eafb4e98cf7673/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/cf5e1bffa769308a3bd4e289052062da/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/df721a448029b833f0e18a21ed55b386/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/61f903db516e52d8783db3337e87ee1a/core-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/f30cb0324495be72899809e53a1b8b18/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/c70713324b2cae2ab7bfcbb4308f8533/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5ed74705239d0ac590c4e2ec6e58a3db/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/12b81da349125f516d34b054e4b98d41/versionedparcelable-1.0.0/AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ec348c835fa85e549a30f7d7a69dd48e/lifecycle-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/0cc3835a7a067cc482fbd366b909089c/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/28a3170e6610b3e9ad3035b872d84ea5/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/e539d8b4e22cd09de6cf78a2b445d839/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/f26cb074b3681077f4d38c5c96d0069e/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ac361face763b38075ac877c18b42d1f/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/79ede6663a81cd857f05187f391cb70e/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:2:1-27:12
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:2:1-27:12
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:2:1-27:12
+	package
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:4:5-29
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:4:5-29
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml
+	android:versionName
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:6:5-30
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:6:5-30
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:5:5-28
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:5:5-28
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml
+	android:installLocation
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:7:5-35
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:7:5-35
+supports-screens
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:12:5-16:40
+REJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:12:5-16:40
+	tools:node
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:5:9-29
+	android:largeScreens
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:15:9-36
+	android:smallScreens
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:13:9-36
+	android:normalScreens
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:14:9-37
+	android:xlargeScreens
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:16:9-37
+uses-feature#0x00020000
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:19:5-21:35
+REJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:19:5-21:35
+	android:glEsVersion
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:20:9-41
+	android:required
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:21:9-32
+application
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:5-69:19
+MERGED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:5-69:19
+MERGED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:5-69:19
+MERGED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:17:5-25:19
+MERGED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:17:5-25:19
+MERGED from [androidx.core:core:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/61f903db516e52d8783db3337e87ee1a/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/61f903db516e52d8783db3337e87ee1a/core-1.0.0/AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/12b81da349125f516d34b054e4b98d41/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/12b81da349125f516d34b054e4b98d41/versionedparcelable-1.0.0/AndroidManifest.xml:22:5-23:19
+	android:requestLegacyExternalStorage
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:136-180
+		REJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:136-180
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/61f903db516e52d8783db3337e87ee1a/core-1.0.0/AndroidManifest.xml:22:18-86
+	android:label
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:18-67
+	tools:ignore
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:96-135
+	android:icon
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:181-208
+	android:allowBackup
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:68-95
+	tools:replace
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:19:9-61
+meta-data#xr_mode_metadata_name
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:42:9-44:54
+REJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:42:9-44:54
+	tools:node
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:22:20-39
+	android:value
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:44:13-51
+	android:name
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:43:13-49
+activity#com.godot.game.GodotApp
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:46:9-63:20
+MERGED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:46:9-63:20
+MERGED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:46:9-63:20
+	android:screenOrientation
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:51:13-50
+		REJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:51:13-50
+	android:label
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:48:13-62
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:48:13-62
+	android:launchMode
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:50:13-44
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:50:13-44
+	android:resizeableActivity
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:53:13-47
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:53:13-47
+	tools:ignore
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:54:13-43
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:54:13-43
+	android:configChanges
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:52:13-141
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:52:13-141
+	android:theme
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:49:13-55
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:49:13-55
+	tools:replace
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:23:58-99
+	android:name
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:47:13-37
+meta-data#com.oculus.vr.focusaware
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:57:13-88
+REJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:57:13-88
+	tools:node
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:24:24-43
+	android:value
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:57:64-85
+	android:name
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:57:24-63
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:59:13-62:29
+action#android.intent.action.MAIN
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:60:17-69
+	android:name
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:60:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:61:17-77
+	android:name
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:61:27-74
+uses-sdk
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml
+MERGED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:7:5-9:41
+MERGED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5b5c96b58f7e900ed17e011bb7ea215f/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5b5c96b58f7e900ed17e011bb7ea215f/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ef8a8ee959fb4c3cb45896488d0f6629/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ef8a8ee959fb4c3cb45896488d0f6629/fragment-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/171357cc7dc8c7c45b23ac0c50de1342/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/171357cc7dc8c7c45b23ac0c50de1342/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/49fe4f73117fbb6195871cb5d1ff1533/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/49fe4f73117fbb6195871cb5d1ff1533/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/70e72f97faa3655a718a198998797060/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/70e72f97faa3655a718a198998797060/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5ffb2a6ed7454eb2493ea3dd0e618bbe/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5ffb2a6ed7454eb2493ea3dd0e618bbe/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/c640c1f9b0190034d84961299d1f0136/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/c640c1f9b0190034d84961299d1f0136/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ce823e5504a6ae565da5ace5e16331a9/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ce823e5504a6ae565da5ace5e16331a9/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/800e8eed58fcf7f7dac7e44407ab1d8b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/800e8eed58fcf7f7dac7e44407ab1d8b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5cb6e6b367c22ef8e7583794d528b30d/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5cb6e6b367c22ef8e7583794d528b30d/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/90cbb7e6c24ae86ef5eafb4e98cf7673/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/90cbb7e6c24ae86ef5eafb4e98cf7673/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/cf5e1bffa769308a3bd4e289052062da/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/cf5e1bffa769308a3bd4e289052062da/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/df721a448029b833f0e18a21ed55b386/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/df721a448029b833f0e18a21ed55b386/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/61f903db516e52d8783db3337e87ee1a/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/61f903db516e52d8783db3337e87ee1a/core-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/f30cb0324495be72899809e53a1b8b18/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/f30cb0324495be72899809e53a1b8b18/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/c70713324b2cae2ab7bfcbb4308f8533/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/c70713324b2cae2ab7bfcbb4308f8533/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5ed74705239d0ac590c4e2ec6e58a3db/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/5ed74705239d0ac590c4e2ec6e58a3db/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/12b81da349125f516d34b054e4b98d41/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/12b81da349125f516d34b054e4b98d41/versionedparcelable-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ec348c835fa85e549a30f7d7a69dd48e/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ec348c835fa85e549a30f7d7a69dd48e/lifecycle-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/0cc3835a7a067cc482fbd366b909089c/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/0cc3835a7a067cc482fbd366b909089c/lifecycle-viewmodel-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/28a3170e6610b3e9ad3035b872d84ea5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/28a3170e6610b3e9ad3035b872d84ea5/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/e539d8b4e22cd09de6cf78a2b445d839/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/e539d8b4e22cd09de6cf78a2b445d839/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/f26cb074b3681077f4d38c5c96d0069e/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/f26cb074b3681077f4d38c5c96d0069e/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ac361face763b38075ac877c18b42d1f/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/ac361face763b38075ac877c18b42d1f/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/79ede6663a81cd857f05187f391cb70e/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/79ede6663a81cd857f05187f391cb70e/core-runtime-2.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml
+INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml
+		INJECTED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml
+uses-feature#0x00030000
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:10:5-78
+	android:glEsVersion
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:10:19-51
+	android:required
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:10:52-75
+instrumentation
+ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:11:5-16:60
+REJECTED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:11:5-15:57
+	tools:node
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:12:9-29
+	android:label
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:15:9-58
+	android:icon
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:14:9-36
+	android:targetPackage
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:16:9-57
+	android:name
+		ADDED from /media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:13:9-45
+meta-data#org.godotengine.library.version
+ADDED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:20:9-22:44
+	android:value
+		ADDED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:22:13-41
+	android:name
+		ADDED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:21:13-59
+service#org.godotengine.godot.GodotDownloaderService
+ADDED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:24:9-80
+	android:name
+		ADDED from [godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:24:18-77

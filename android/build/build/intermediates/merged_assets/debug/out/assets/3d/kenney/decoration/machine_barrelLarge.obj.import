@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/machine_barrelLarge.obj-eb3796adf392ae4e42f767fc5b03df45.mesh"
+
+[deps]
+
+files=[ "res://.import/machine_barrelLarge.obj-eb3796adf392ae4e42f767fc5b03df45.mesh" ]
+
+source_file="res://assets/3d/kenney/decoration/machine_barrelLarge.obj"
+dest_files=[ "res://.import/machine_barrelLarge.obj-eb3796adf392ae4e42f767fc5b03df45.mesh", "res://.import/machine_barrelLarge.obj-eb3796adf392ae4e42f767fc5b03df45.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

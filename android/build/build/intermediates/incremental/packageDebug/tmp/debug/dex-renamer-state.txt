@@ -1,0 +1,4 @@
+#Fri Jun 18 09:27:31 BRT 2021
+base.0=/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

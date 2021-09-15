@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/gate_inner_l.obj-67a307318d6cf222e187970b79d21f79.mesh"
+
+[deps]
+
+files=[ "res://.import/gate_inner_l.obj-67a307318d6cf222e187970b79d21f79.mesh" ]
+
+source_file="res://assets/3d/models/gate_inner_l.obj"
+dest_files=[ "res://.import/gate_inner_l.obj-67a307318d6cf222e187970b79d21f79.mesh", "res://.import/gate_inner_l.obj-67a307318d6cf222e187970b79d21f79.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

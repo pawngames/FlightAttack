@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rock_crystals.obj-aab0d65a470c64fd7c8a05bc54bd9693.mesh"
+
+[deps]
+
+files=[ "res://.import/rock_crystals.obj-aab0d65a470c64fd7c8a05bc54bd9693.mesh" ]
+
+source_file="res://assets/3d/kenney/terrain/rock_crystals.obj"
+dest_files=[ "res://.import/rock_crystals.obj-aab0d65a470c64fd7c8a05bc54bd9693.mesh", "res://.import/rock_crystals.obj-aab0d65a470c64fd7c8a05bc54bd9693.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

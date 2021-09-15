@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/pipe_corner.obj-1c70dcb282597aa11c276df1034b0dde.mesh"
+
+[deps]
+
+files=[ "res://.import/pipe_corner.obj-1c70dcb282597aa11c276df1034b0dde.mesh" ]
+
+source_file="res://assets/3d/kenney/buildings/pipe_corner.obj"
+dest_files=[ "res://.import/pipe_corner.obj-1c70dcb282597aa11c276df1034b0dde.mesh", "res://.import/pipe_corner.obj-1c70dcb282597aa11c276df1034b0dde.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

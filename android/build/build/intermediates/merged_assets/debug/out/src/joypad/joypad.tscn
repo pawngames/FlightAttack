@@ -1,0 +1,106 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://src/joypad/joypad.gd" type="Script" id=1]
+[ext_resource path="res://src/joypad/stick.tscn" type="PackedScene" id=2]
+[ext_resource path="res://src/joypad/stick.gd" type="Script" id=3]
+[ext_resource path="res://assets/control/btn.png" type="Texture" id=4]
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0.125, 0 ), 0.0, 1.14286, 0, 1, Vector2( 1, 1 ), 1.14286, 0.0, 1, 0 ]
+
+[node name="joypad" type="Control"]
+anchor_left = 0.024
+anchor_top = 0.5
+anchor_right = 0.979
+anchor_bottom = 0.958
+margin_left = 0.424
+margin_right = 0.503479
+margin_bottom = 0.199951
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+c_curve = SubResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 275, 275 )
+color = Color( 1, 1, 1, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="left_stick" parent="." instance=ExtResource( 2 )]
+position = Vector2( 137, 137 )
+script = ExtResource( 3 )
+
+[node name="buttons" type="VBoxContainer" parent="."]
+anchor_left = 0.677
+anchor_right = 0.992
+anchor_bottom = 1.028
+margin_left = 162.894
+margin_top = -25.0
+margin_right = 84.8245
+margin_bottom = -77.7
+grow_horizontal = 2
+grow_vertical = 2
+rect_rotation = 45.0
+mouse_filter = 2
+custom_constants/separation = 30
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HB1" type="HBoxContainer" parent="buttons"]
+margin_right = 230.0
+margin_bottom = 100.0
+custom_constants/separation = 30
+
+[node name="BtnFire" type="TextureButton" parent="buttons/HB1"]
+margin_right = 100.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 4 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton2" type="TextureButton" parent="buttons/HB1"]
+margin_left = 130.0
+margin_right = 230.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 4 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HB2" type="HBoxContainer" parent="buttons"]
+margin_top = 130.0
+margin_right = 230.0
+margin_bottom = 230.0
+custom_constants/separation = 30
+
+[node name="BtnDash" type="TextureButton" parent="buttons/HB2"]
+margin_right = 100.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 4 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureButton4" type="TextureButton" parent="buttons/HB2"]
+margin_left = 130.0
+margin_right = 230.0
+margin_bottom = 100.0
+texture_normal = ExtResource( 4 )
+stretch_mode = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="control_signal" from="left_stick" to="." method="_on_left_stick_control_signal"]
+[connection signal="button_down" from="buttons/HB1/BtnFire" to="." method="_on_BtnFire_button_down"]
+[connection signal="button_up" from="buttons/HB1/BtnFire" to="." method="_on_BtnFire_button_up"]

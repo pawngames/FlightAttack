@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/boss_01_turret_canon.obj-ddf8ce619fc08bdeec0d2cb705bc324a.mesh"
+
+[deps]
+
+files=[ "res://.import/boss_01_turret_canon.obj-ddf8ce619fc08bdeec0d2cb705bc324a.mesh" ]
+
+source_file="res://assets/3d/models/bosses/boss_01/boss_01_turret_canon.obj"
+dest_files=[ "res://.import/boss_01_turret_canon.obj-ddf8ce619fc08bdeec0d2cb705bc324a.mesh", "res://.import/boss_01_turret_canon.obj-ddf8ce619fc08bdeec0d2cb705bc324a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

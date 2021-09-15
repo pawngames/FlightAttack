@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/control/border.png" type="Texture" id=2]
+[ext_resource path="res://src/joypad/border.gd" type="Script" id=3]
+[ext_resource path="res://assets/control/center.png" type="Texture" id=4]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends Node2D
+
+export(int) var joy_id = 0
+
+var stick_speed = 0
+var stick_angle = 0
+var stick_vector = Vector2()
+
+var stick_speed_ant = 0
+var stick_angle_ant = 0
+var stick_vector_ant = Vector2()
+
+signal control_signal(speed, angle, vector)
+
+func _ready():
+	$border.set_position(global_position)
+	pass
+
+func _process(delta):
+	pass
+
+func _on_Timer_timeout():
+	if 	stick_speed != stick_speed_ant or \\
+		stick_angle != stick_angle_ant or \\
+		stick_vector != stick_vector_ant:
+		stick_speed_ant = stick_speed
+		stick_angle_ant = stick_angle
+		stick_vector_ant = stick_vector
+		emit_signal(\"control_signal\", stick_speed, stick_angle, stick_vector)
+	pass
+"
+
+[node name="stick" type="Node2D"]
+script = SubResource( 1 )
+
+[node name="border" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+script = ExtResource( 3 )
+
+[node name="center" type="Sprite" parent="border"]
+texture = ExtResource( 4 )
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.25
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

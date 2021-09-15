@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/diamond_wired.obj-40976882dfde5e2f9cfaa65fcf986a87.mesh"
+
+[deps]
+
+files=[ "res://.import/diamond_wired.obj-40976882dfde5e2f9cfaa65fcf986a87.mesh" ]
+
+source_file="res://assets/3d/models/diamond_wired.obj"
+dest_files=[ "res://.import/diamond_wired.obj-40976882dfde5e2f9cfaa65fcf986a87.mesh", "res://.import/diamond_wired.obj-40976882dfde5e2f9cfaa65fcf986a87.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

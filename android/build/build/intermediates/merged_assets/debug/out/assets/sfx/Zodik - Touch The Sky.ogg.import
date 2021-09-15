@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Zodik - Touch The Sky.ogg-8ac9befe6bac290120ea56c769ac5d92.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/Zodik - Touch The Sky.ogg"
+dest_files=[ "res://.import/Zodik - Touch The Sky.ogg-8ac9befe6bac290120ea56c769ac5d92.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

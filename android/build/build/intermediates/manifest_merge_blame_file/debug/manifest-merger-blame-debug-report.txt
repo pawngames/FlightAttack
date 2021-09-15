@@ -1,0 +1,96 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="org.godotengine.retrowaveburner"
+4    android:installLocation="auto"
+5    android:versionCode="1"
+6    android:versionName="1.0" > <!-- glEsVersion is modified by the exporter, changing this value here has no effect. -->
+7    <uses-sdk
+8        android:minSdkVersion="18"
+9        android:targetSdkVersion="29" />
+10
+11    <supports-screens
+11-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:12:5-16:40
+12        android:largeScreens="true"
+12-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:15:9-36
+13        android:normalScreens="true"
+13-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:14:9-37
+14        android:smallScreens="true"
+14-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:13:9-36
+15        android:xlargeScreens="true" />
+15-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:16:9-37
+16
+17    <uses-feature
+17-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:10:5-78
+18        android:glEsVersion="0x00030000"
+18-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:10:19-51
+19        android:required="true" />
+19-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:10:52-75
+20
+21    <instrumentation
+21-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:11:5-16:60
+22        android:name=".GodotInstrumentation"
+22-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:13:9-45
+23        android:icon="@mipmap/icon"
+23-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:14:9-36
+24        android:label="@string/godot_project_name_string"
+24-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:15:9-58
+25        android:targetPackage="org.godotengine.$genname" />
+25-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/src/debug/AndroidManifest.xml:16:9-57
+26
+27    <application
+27-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:5-69:19
+28        android:allowBackup="false"
+28-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:68-95
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.0.0] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/61f903db516e52d8783db3337e87ee1a/core-1.0.0/AndroidManifest.xml:22:18-86
+30        android:debuggable="true"
+31        android:icon="@mipmap/icon"
+31-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:181-208
+32        android:label="@string/godot_project_name_string"
+32-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:18-67
+33        android:requestLegacyExternalStorage="false" >
+33-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:31:136-180
+34        <activity
+34-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:46:9-63:20
+35            android:name="com.godot.game.GodotApp"
+35-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:47:13-37
+36            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|density|keyboard|navigation|screenLayout|uiMode"
+36-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:52:13-141
+37            android:label="@string/godot_project_name_string"
+37-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:48:13-62
+38            android:launchMode="singleTask"
+38-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:50:13-44
+39            android:resizeableActivity="false"
+39-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:53:13-47
+40            android:screenOrientation="landscape"
+40-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:51:13-50
+41            android:theme="@style/GodotAppSplashTheme" >
+41-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:49:13-55
+42            <intent-filter>
+42-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:59:13-62:29
+43                <action android:name="android.intent.action.MAIN" />
+43-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:60:17-69
+43-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:60:25-66
+44
+45                <category android:name="android.intent.category.LAUNCHER" />
+45-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:61:17-77
+45-->/media/jmtstorres/Dados/Projetos/Jogos/FlightAttack/android/build/AndroidManifest.xml:61:27-74
+46            </intent-filter>
+47        </activity>
+48        <!-- Records the version of the Godot editor used for building -->
+49        <meta-data
+50            android:name="org.godotengine.editor.version"
+51            android:value="3.3.2.stable" /> <!-- Records the version of the Godot library -->
+52        <meta-data
+52-->[godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:20:9-22:44
+53            android:name="org.godotengine.library.version"
+53-->[godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:21:13-59
+54            android:value="3.3.2.stable" />
+54-->[godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:22:13-41
+55
+56        <service android:name="org.godotengine.godot.GodotDownloaderService" />
+56-->[godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:24:9-80
+56-->[godot-lib.debug.aar] /home/jmtstorres/.gradle/caches/transforms-2/files-2.1/bc1e848ec22747470543ab6597f4376b/jetified-godot-lib.debug/AndroidManifest.xml:24:18-77
+57    </application>
+58
+59</manifest>

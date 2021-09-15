@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/missile_wire.obj-54916398ed9ec008f31da3422a03a546.mesh"
+
+[deps]
+
+files=[ "res://.import/missile_wire.obj-54916398ed9ec008f31da3422a03a546.mesh" ]
+
+source_file="res://assets/3d/models/missile_wire.obj"
+dest_files=[ "res://.import/missile_wire.obj-54916398ed9ec008f31da3422a03a546.mesh", "res://.import/missile_wire.obj-54916398ed9ec008f31da3422a03a546.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

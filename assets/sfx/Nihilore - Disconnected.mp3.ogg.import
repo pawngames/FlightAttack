@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Nihilore - Disconnected.mp3.ogg-e54b7affdab2ed8fd95a849fa0eb8568.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/Nihilore - Disconnected.mp3.ogg"
+dest_files=[ "res://.import/Nihilore - Disconnected.mp3.ogg-e54b7affdab2ed8fd95a849fa0eb8568.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

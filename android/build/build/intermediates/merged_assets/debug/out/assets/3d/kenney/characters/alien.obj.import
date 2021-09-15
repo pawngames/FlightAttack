@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/alien.obj-3060ef2e9cfa34b2f4032481badfa54a.mesh"
+
+[deps]
+
+files=[ "res://.import/alien.obj-3060ef2e9cfa34b2f4032481badfa54a.mesh" ]
+
+source_file="res://assets/3d/kenney/characters/alien.obj"
+dest_files=[ "res://.import/alien.obj-3060ef2e9cfa34b2f4032481badfa54a.mesh", "res://.import/alien.obj-3060ef2e9cfa34b2f4032481badfa54a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

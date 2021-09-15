@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Zodik - Neon Owl.ogg-cf01dc753ec85b3edb2e13143be5cee0.oggstr"
+
+[deps]
+
+source_file="res://assets/sfx/Zodik - Neon Owl.ogg"
+dest_files=[ "res://.import/Zodik - Neon Owl.ogg-cf01dc753ec85b3edb2e13143be5cee0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

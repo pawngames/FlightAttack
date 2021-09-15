@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/turret_body_wire.obj-b0d8e8104dd257563cba81d17136bd03.mesh"
+
+[deps]
+
+files=[ "res://.import/turret_body_wire.obj-b0d8e8104dd257563cba81d17136bd03.mesh" ]
+
+source_file="res://assets/3d/models/turret_body_wire.obj"
+dest_files=[ "res://.import/turret_body_wire.obj-b0d8e8104dd257563cba81d17136bd03.mesh", "res://.import/turret_body_wire.obj-b0d8e8104dd257563cba81d17136bd03.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

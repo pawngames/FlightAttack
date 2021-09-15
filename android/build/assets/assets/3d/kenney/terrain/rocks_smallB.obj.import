@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/rocks_smallB.obj-3da5698e7e85e442fbcbc2a25ca0ad88.mesh"
+
+[deps]
+
+files=[ "res://.import/rocks_smallB.obj-3da5698e7e85e442fbcbc2a25ca0ad88.mesh" ]
+
+source_file="res://assets/3d/kenney/terrain/rocks_smallB.obj"
+dest_files=[ "res://.import/rocks_smallB.obj-3da5698e7e85e442fbcbc2a25ca0ad88.mesh", "res://.import/rocks_smallB.obj-3da5698e7e85e442fbcbc2a25ca0ad88.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true
